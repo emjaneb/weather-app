@@ -1,0 +1,106 @@
+.card-body {
+  background-color: rgb(163, 210, 202, 0.6);
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+.container {
+  border-radius: 20px;
+}
+.city {
+  text-align: center;
+  font-family: "REM", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.date-time {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 800;
+}
+
+.today-forecast {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+  left: 5px;
+  bottom: 5px;
+}
+
+.current-temp {
+  font-size: 60px;
+  font-family: "REM", sans-serif;
+  font-weight: 600;
+}
+
+.degrees-celsius {
+  font-size: 15px;
+  font-family: "REM", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  bottom: 20px;
+}
+
+.degrees {
+  font-size: 30px;
+  font-family: "REM", sans-serif;
+  font-weight: 600;
+  position: relative;
+  bottom: 20px;
+}
+.precipitation,
+.humidity,
+.wind,
+.high,
+.low {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.next-week-forecast {
+  position: relative;
+  top: 35px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.card {
+  margin: 50px 0;
+  width: 50%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card-page {
+  margin: 20px 0;
+  width: 50%;
+  text-align: center;
+  border: none;
+}
+
+.forecast-card-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 800;
+}
+
+.forecast-card-text {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+}
+
+.credit {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  margin-top: 15px;
+  font-size: 15px;
+}

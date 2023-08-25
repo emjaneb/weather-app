@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⛅ Weather App</title>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/b13d3ba90a.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="src/styles.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card mx-auto" style="width: 50%;">
+            <div class="card-body">
+
+                <div class="container d-flex justify-content-center">
+
+                    <form class="search-form" id="search-form">
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="search" placeholder="Type a city.." autofocus="on" autocomplete="off"
+                                    id="city-input" class="form-control shadow-sm" />
+                            </div>
+                            <div class="col-3">
+                                <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm w-100"
+                                    id="city-input" />
+                            </div>
+                            <div class="col-3">
+                                <input type="button" value="Current" class="btn btn-success w-100"
+                                    id="current-location-button" />
+                            </div>
+                    </form>
+                </div>
+                </form>
+            </div>
+
+            <br />
+
+            <h1 class="city" id="city">Melbourne</h1>
+            <p class="date-time"></p>
+
+            <br />
+
+            <div class="today-card-group">
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <img src="images/partly-sunny-lrg.png" alt="partly sunny icon">
+                        <div class="today-forecast">Partly Sunny</div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <span class="current-temp" id="temp">17</span>
+                        <span class="degrees">°C</span>
+                        <!-- remove C and reactivate below code and JS code to add celsius to fahrenheit buttons -->
+
+                        <!-- <span class="celsius"><a href="#">C</a></span>
+                        <span class="divider">|</span>
+                        <span class="fahrenheit"><a href="#">F</a></span> -->
+
+                        <p class="precipitation"><span class="bold">Precipitation:</span> 1%</p>
+                        <p class="humidity"><span class="bold">Humidity:</span> 60%</p>
+                        <p class="wind"><span class="bold">Wind:</span> 21km/h</p>
+                        <br />
+                        <p class="low"><span class="bold">L:</span> 6°C</p>
+                        <p class="high"><span class="bold">H:</span> 18°C</p>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-week-forecast">5 Day Forecast</div>
+            <div class="card-group">
+                <div class="card saturday">
+                    <img class="card-img-top" src="images/sunny-sml.png" alt="sunny icon" />
+                    <div class="forecast-card-body">
+                        <h5 class="forecast-card-title">Sat</h5>
+                        <p class="forecast-card-text">18°C</p>
+                    </div>
+                </div>
+
+                <div class="card sunday">
+                    <img class="card-img-top" src="images/partly-sunny-sml.png" alt="partly sunny icon">
+                    <div class="forecast-card-body">
+                        <h5 class="forecast-card-title">Sun</h5>
+                        <p class="forecast-card-text">18°C</p>
+                    </div>
+                </div>
+                <div class="card monday">
+                    <img class="card-img-top" src="images/cloudy-sml.png" alt="cloudy icon">
+                    <div class="forecast-card-body">
+                        <h5 class="forecast-card-title">Mon</h5>
+                        <p class="forecast-card-text">16°C</p>
+                    </div>
+                </div>
+                <div class="card tuesday">
+                    <img class="card-img-top" src="images/cloudy-sml.png" alt="cloudy icon">
+                    <div class="forecast-card-body">
+                        <h5 class="forecast-card-title">Tue</h5>
+                        <p class="forecast-card-text">16°C</p>
+                    </div>
+                </div>
+                <div class="card wednesday">
+                    <img class="card-img-top" src="images/partly-sunny-sml.png" alt="partly sunny icon">
+                    <div class="forecast-card-body">
+                        <h5 class="forecast-card-title">Wed</h5>
+                        <p class="forecast-card-text">17°C</p>
+                    </div>
+                </div>
+            </div>
+            <div class="credit">Coded by <span class="bold">Emma Bartley</span></credit>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
